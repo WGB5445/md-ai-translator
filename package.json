@@ -1,0 +1,40 @@
+{
+  "name": "md-ai-translator",
+  "version": "1.0.0",
+  "description": "使用 OpenAI API 翻译 MD/MDX 文件的 CLI工具",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "md-ai-translator": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "esrun src/index.ts",
+    "fmt": "prettier --write \"src/**/*.ts\""
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^10.0.0",
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.0",
+    "openai": "^4.24.1"
+  },
+  "keywords": [
+    "mdx",
+    "openai",
+    "translator",
+    "cli"
+  ],
+  "packageManager": "pnpm@10.9.0",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.15.3",
+    "esrun": "^3.2.26",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
