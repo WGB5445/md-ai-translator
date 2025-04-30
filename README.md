@@ -38,6 +38,9 @@ pnpm add -g md-ai-translator
 # 基本用法
 md-ai-translator -i ./input-folder -o ./output-folder
 
+# 基本用法
+md-ai-translator -i ./input-file -o ./output-file
+
 # 使用自定义配置
 md-ai-translator -i ./input-folder -o ./output-folder --model gpt-4-turbo --temperature 1.2 --chunk-size 4000
 
@@ -49,8 +52,8 @@ md-ai-translator -i ./input-folder -o ./output-folder --apikey YOUR_API_KEY --ur
 
 | 参数 | 描述 | 默认值 |
 |------|------|--------|
-| `-i, --input <dir>` | 输入目录（必需） | - |
-| `-o, --output <dir>` | 输出目录（必需） | - |
+| `-i, --input <dir>` | 输入目录/文件（必需） | - |
+| `-o, --output <dir>` | 输出目录/文件（必需） | - |
 | `--model <model>` | AI 模型 | gpt-4-1106-preview |
 | `--temperature <number>` | 生成温度 (0-2) | 1.3 |
 | `--chunk-size <number>` | 分块大小 | 3000 |
@@ -110,6 +113,9 @@ pnpm add -g md-ai-translator
 # Basic usage
 md-ai-translator -i ./input-folder -o ./output-folder
 
+# Basic usage
+md-ai-translator -i ./input-file -o ./output-file
+
 # With custom configuration
 md-ai-translator -i ./input-folder -o ./output-folder --model gpt-4-turbo --temperature 1.2 --chunk-size 4000
 
@@ -121,8 +127,8 @@ md-ai-translator -i ./input-folder -o ./output-folder --apikey YOUR_API_KEY --ur
 
 | Argument | Description | Default |
 |----------|-------------|---------|
-| `-i, --input <dir>` | Input directory (required) | - |
-| `-o, --output <dir>` | Output directory (required) | - |
+| `-i, --input <dir>` | Input directory/file (required) | - |
+| `-o, --output <dir>` | Output directory/file (required) | - |
 | `--model <model>` | AI model | gpt-4-1106-preview |
 | `--temperature <number>` | Generation temperature (0-2) | 1.3 |
 | `--chunk-size <number>` | Chunk size | 3000 |

@@ -89,8 +89,8 @@ program
   .name("mdx-ai-translator")
   .description("MDX 文件AI翻译工具")
   .version("1.0.0")
-  .requiredOption("-i, --input <dir>", "输入目录")
-  .requiredOption("-o, --output <dir>", "输出目录")
+  .requiredOption("-i, --input <dir> / <file>", "输入目录 / 文件")
+  .requiredOption("-o, --output <dir> / <file>", "输出目录 / 文件")
   .option(
     "--model <model>",
     `AI模型 (默认: ${CONFIG.DEFAULT_MODEL})`,
